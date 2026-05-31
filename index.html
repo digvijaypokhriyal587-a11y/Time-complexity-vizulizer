@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Complexity Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <!-- Navbar -->
+<nav>
+
+    <h2>TC Visualizer</h2>
+
+    <ul>
+        <li><a href="#array-container">Visualizer</a></li>
+        <li><a href="#codeInput">Analyzer</a></li>
+        <li><a href="#about">About</a></li>
+        <button id="themeBtn">🌙 Dark Mode</button>
+    </ul>
+
+</nav>
+
+    <section class="hero">
+
+        <h1>🚀 Time Complexity Visualizer</h1>
+
+        <p>
+            Learn Sorting Algorithms and Analyze Code Complexity
+            through Interactive Visualizations.
+        </p>
+
+    </section>
+<div class="controls">
+
+    <button id="generate">Generate Array</button>
+
+    <label>Array Size:</label>
+    <input type="range" id="size" min="10" max="50" value="30">
+
+    <label>Speed:</label>
+    <input type="range" id="speed" min="1" max="100" value="50">
+
+    <select id="algorithm">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+    </select>
+
+    <button id="start">Start Sorting</button>
+
+    <br><br>
+
+    <!-- Search Controls -->
+    <input
+        type="number"
+        id="target"
+        placeholder="Enter value to search">
+
+    <button id="linearSearch">
+        Linear Search
+    </button>
+
+    <button id="binarySearch">
+        Binary Search
+    </button>
+
+</div>
+
+    <!-- Visualization Area -->
+    <div id="array-container"></div>
+
+    <!-- Statistics -->
+    <div id="stats">
+
+        <h2>Statistics</h2>
+
+        <p id="comparisons">Comparisons: 0</p>
+
+        <p id="swaps">Swaps: 0</p>
+
+    </div>
+
+    <!-- Complexity Information -->
+    <div id="complexity-box">
+
+        <h2>Algorithm Complexity</h2>
+
+        <p id="best"></p>
+
+        <p id="average"></p>
+
+        <p id="worst"></p>
+
+        <p id="space"></p>
+
+    </div>
+    <div id="algo-info">
+
+    <h2>Algorithm Information</h2>
+
+    <div id="info-content"></div>
+
+</div>
+
+    <!-- Code Complexity Analyzer -->
+    <div class="complexity-analyzer">
+
+        <h2>Code Complexity Analyzer</h2>
+
+        <p>
+            Paste your C++, Java, Python, or JavaScript code below
+            and click Analyze Complexity.
+        </p>
+
+        <textarea
+            id="codeInput"
+            rows="15"
+            placeholder="Paste your code here..."></textarea>
+
+        <br><br>
+
+        <button id="analyzeBtn">
+            Analyze Complexity
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+    <button id="themeBtn">
+    🌙 Dark Mode
+    </button>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+<section id="about">
+
+    <h2>About Project</h2>
+
+    <p>
+        This Time Complexity Visualizer helps students understand
+        sorting algorithms and analyze code complexity through
+        interactive visualizations.
+    </p>
+
+</section>
+
+</html>

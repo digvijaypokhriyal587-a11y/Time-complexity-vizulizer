@@ -1,0 +1,277 @@
+/* General Styling */
+
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Controls Section */
+
+.controls {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.controls label {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.controls input,
+.controls select,
+.controls button {
+    margin: 5px;
+}
+
+/* Buttons */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0078ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #005fcc;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+/* Array Visualization */
+
+#array-container {
+    height: 450px;
+    width: 95%;
+    margin: 20px auto;
+    border: 2px solid #333;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Bars */
+
+.bar {
+    width: 15px;
+    margin: 2px;
+    background-color: blue;
+    transition: all 0.2s ease;
+}
+
+#stats,
+#complexity-box,
+.complexity-analyzer{
+
+    backdrop-filter: blur(15px);
+
+    background: rgba(255,255,255,0.15);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:15px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* Code Complexity Analyzer */
+
+.complexity-analyzer {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.complexity-analyzer h2 {
+    margin-top: 0;
+}
+
+/* Code Input Area */
+
+#codeInput {
+    width: 95%;
+    height: 300px;
+
+    padding: 10px;
+
+    font-family: Consolas, monospace;
+    font-size: 14px;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+
+    resize: vertical;
+}
+
+/* Analyze Button */
+
+#analyzeBtn {
+    margin-top: 15px;
+}
+
+/* Result Section */
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls input,
+    .controls select,
+    .controls button {
+        width: 90%;
+        margin: 8px 0;
+    }
+
+    #array-container {
+        height: 300px;
+    }
+
+    .bar {
+        width: 8px;
+        margin: 1px;
+    }
+
+    #stats,
+    #complexity-box {
+        width: 90%;
+    }
+
+    #codeInput {
+        width: 95%;
+    }
+}
+.hero{
+    background: linear-gradient(135deg,#4f46e5,#06b6d4);
+    color:white;
+    padding:50px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .controls,
+.dark #stats,
+.dark #complexity-box,
+.dark .complexity-analyzer{
+    background:#1e1e1e;
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:#111827;
+    color:white;
+}
+
+nav h2{
+    margin:0;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav li:hover{
+    color:#06b6d4;
+}
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .controls,
+.dark #stats,
+.dark #complexity-box,
+.dark .complexity-analyzer{
+    background:#1e1e1e;
+    color:white;
+}
+#target{
+    padding:8px;
+    width:180px;
+    margin:10px;
+}
+.bar-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:2px;
+}
+
+.bar-label{
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.bar{
+    width:15px;
+    background-color:blue;
+    transition:all 0.2s ease;
+}
